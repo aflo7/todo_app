@@ -10,17 +10,14 @@
 }
 * {
   box-sizing: border-box;
-  font-size: 16pt;
 
 }
 body {
   margin: 0;
   font-family: 'proxima-nova', sans-serif;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgb(29, 56, 83); */
   background-color: var(--orange);
   color: black;
-  /* font-size: 18pt; */
 }
 
 code {
@@ -29,7 +26,6 @@ code {
 }
 
 button {
-  /* border-radius: 10px; */
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -37,8 +33,6 @@ button {
 }
 
 input {
-  /* border-radius: 10px; */
-  font-size: 12pt;
   color: black;
   padding: 5px;
 }

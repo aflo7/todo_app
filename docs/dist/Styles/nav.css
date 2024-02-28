@@ -1,10 +1,10 @@
 .nav-btn {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   cursor: pointer;
   padding: 10px;
-  border-radius: 10px;
-  
+  border-radius: 5px;
+  gap: 10px;
 
 }
 
@@ -15,21 +15,16 @@
 }
 
 .nav-inner-text {
-  padding-left: 6px;
-  font-size: 12pt;
-  width: 160px;
+  /* padding-left: 6px; */
+  width: 200px;
   word-break: break-all;
 
 }
 
 .nav-icon {
-  /* font-size: 18pt; */
+  font-size: 1.5rem;
 }
 
-nav {
-  /* padding: 15px; */
-  /* background-color: black; */
-}
 
 .nav-wrapper {
   background-color: var(--dark-orange);
