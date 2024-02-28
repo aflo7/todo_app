@@ -5,29 +5,22 @@
   padding: 10px;
   border-radius: 5px;
   gap: 10px;
-
 }
 
 .nav-btn:hover {
   background-color: var(--gold);
-
-
 }
 
 .nav-inner-text {
-  /* padding-left: 6px; */
   width: 200px;
   word-break: break-all;
-
 }
 
 .nav-icon {
   font-size: 1.5rem;
 }
 
-
 .nav-wrapper {
   background-color: var(--dark-orange);
   padding: 20px;
-
 }
