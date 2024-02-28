@@ -1,16 +1,16 @@
-import React from "react"
-import { AiOutlineFolderAdd, AiOutlineFolder } from "react-icons/ai"
-import "../Styles/nav.css"
+import React from 'react';
+import { AiOutlineFolderAdd, AiOutlineFolder } from 'react-icons/ai';
+import '../Styles/nav.css';
 
 interface Task {
-  content: string
-  id: string
+  content: string;
+  id: string;
 }
 
 interface Folder {
-  name: string
-  tasks: Record<string, Task[]>
-  count: number
+  name: string;
+  tasks: Record<string, Task[]>;
+  count: number;
 }
 
 function Nav({ store, setSelectedFolder, selectedFolder }) {
@@ -24,7 +24,7 @@ function Nav({ store, setSelectedFolder, selectedFolder }) {
                 key={i}
                 style={
                   folder.name === selectedFolder
-                    ? { backgroundColor: "var(--orange)" }
+                    ? { backgroundColor: 'var(--orange)' }
                     : {}
                 }
                 onClick={() => setSelectedFolder(folder.name)}
@@ -32,24 +32,24 @@ function Nav({ store, setSelectedFolder, selectedFolder }) {
                 <AiOutlineFolder className="nav-icon" />
                 <div className="nav-inner-text">{folder.name}</div>
               </div>
-            )
+            );
           })
         : null}
 
       <div
         style={
-          selectedFolder === "New Folder"
-            ? { backgroundColor: "var(--orange)" }
+          selectedFolder === 'New Folder'
+            ? { backgroundColor: 'var(--orange)' }
             : {}
         }
         className="nav-btn"
-        onClick={() => setSelectedFolder("New Folder")}
+        onClick={() => setSelectedFolder('New Folder')}
       >
         <AiOutlineFolderAdd className="nav-icon" />
         <div className="nav-inner-text">New Folder</div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Nav
+export default Nav;
