@@ -23,4 +23,11 @@
 .nav-wrapper {
   background-color: var(--dark-orange);
   padding: 20px;
+ 
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

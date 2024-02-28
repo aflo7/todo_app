@@ -2,7 +2,14 @@ import React, {useState} from "../../snowpack/pkg/react.js";
 import {FaRegCircle} from "../../snowpack/pkg/react-icons/fa.js";
 import {AiOutlineDelete} from "../../snowpack/pkg/react-icons/ai.js";
 function Notes(props) {
-  const {selectedFolder, addTask, store, createNewFolder, deleteTask, currTasks} = props;
+  const {
+    selectedFolder,
+    addTask,
+    store,
+    createNewFolder,
+    deleteTask,
+    currTasks
+  } = props;
   const [content, setContent] = useState("");
   const [folderName, setFolderName] = useState("");
   const [showNewTaskForm, setShowNewTaskForm] = useState(false);
@@ -17,7 +24,9 @@ function Notes(props) {
       createNewFolder(e, folderName);
       setFolderName("");
     }
-  }, /* @__PURE__ */ React.createElement("input", {
+  }, /* @__PURE__ */ React.createElement("div", {
+    style: {display: "flex", flexDirection: "column"}
+  }, /* @__PURE__ */ React.createElement("strong", null, "Folder name"), /* @__PURE__ */ React.createElement("input", {
     required: true,
     className: "folder-name-input",
     id: "folder-name",
@@ -25,7 +34,7 @@ function Notes(props) {
     type: "text",
     value: folderName,
     onChange: (e) => setFolderName(e.target.value)
-  }), /* @__PURE__ */ React.createElement("button", {
+  })), /* @__PURE__ */ React.createElement("button", {
     type: "submit",
     className: "create-folder-btn"
   }, "Create"))) : /* @__PURE__ */ React.createElement("div", {
@@ -42,7 +51,9 @@ function Notes(props) {
       addTask(e, content);
       setContent("");
     }
-  }, /* @__PURE__ */ React.createElement("input", {
+  }, /* @__PURE__ */ React.createElement("div", {
+    style: {display: "flex", flexDirection: "column"}
+  }, /* @__PURE__ */ React.createElement("strong", null, "Text"), /* @__PURE__ */ React.createElement("input", {
     className: "new-task-content-input",
     type: "text",
     name: "content",
@@ -50,7 +61,7 @@ function Notes(props) {
     value: content,
     onChange: (e) => setContent(e.target.value),
     required: true
-  }), /* @__PURE__ */ React.createElement("div", {
+  })), /* @__PURE__ */ React.createElement("div", {
     className: "new-task-btn-wrapper"
   }, /* @__PURE__ */ React.createElement("button", {
     type: "submit",

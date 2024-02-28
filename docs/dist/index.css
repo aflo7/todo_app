@@ -1,16 +1,12 @@
-
 :root {
   --navy: #264653;
-  --teal: #2A9D8F;
-  --gold: #E9C46A;
-  --orange: #F4A261;
-  --dark-orange: #E76F51;
-
-
+  --teal: #2a9d8f;
+  --gold: #e9c46a;
+  --orange: #f4a261;
+  --dark-orange: #e76f51;
 }
 * {
   box-sizing: border-box;
-
 }
 body {
   margin: 0;
@@ -21,15 +17,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 button {
   padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-
 }
 
 input {
