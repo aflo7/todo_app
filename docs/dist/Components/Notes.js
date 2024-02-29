@@ -1,5 +1,4 @@
 import React, {useState} from "../../snowpack/pkg/react.js";
-import {FaRegCircle} from "../../snowpack/pkg/react-icons/fa.js";
 import {AiOutlineDelete} from "../../snowpack/pkg/react-icons/ai.js";
 function Notes(props) {
   const {
@@ -75,18 +74,15 @@ function Notes(props) {
     }
   }, "Cancel"))) : null), /* @__PURE__ */ React.createElement("div", {
     className: "note-wrapper"
-  }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("strong", null, selectedFolder !== "New Folder" ? selectedFolder : null)), selectedFolder !== "New Folder" && currTasks ? currTasks.map((task, i) => {
+  }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("strong", null, selectedFolder !== "New Folder" ? selectedFolder : null)), /* @__PURE__ */ React.createElement("div", {
+    style: {display: "flex", flexDirection: "column", gap: "10px"}
+  }, selectedFolder !== "New Folder" && currTasks ? currTasks.map((task, i) => {
     return /* @__PURE__ */ React.createElement("div", {
       className: "single-note-wrapper",
       key: i
     }, /* @__PURE__ */ React.createElement("div", {
       className: "single-note"
     }, /* @__PURE__ */ React.createElement("div", {
-      className: "fa-reg-circle-wrapper"
-    }, /* @__PURE__ */ React.createElement(FaRegCircle, {
-      className: "fa-reg-circle",
-      onClick: () => deleteTask(task.id)
-    })), /* @__PURE__ */ React.createElement("div", {
       className: "single-note-content"
     }, task.content)), /* @__PURE__ */ React.createElement("div", {
       className: "single-note-delete-icon-wrapper"
@@ -94,6 +90,6 @@ function Notes(props) {
       className: "single-note-delete-icon",
       onClick: () => deleteTask(task.id)
     })));
-  }) : null));
+  }) : null)));
 }
 export default Notes;

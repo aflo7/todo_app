@@ -5,7 +5,6 @@
     "react-dom": "./react-dom.js",
     "react-icons/ai": "./react-icons/ai.js",
     "react-icons/bi": "./react-icons/bi.js",
-    "react-icons/fa": "./react-icons/fa.js",
     "react-responsive": "./react-responsive.js"
   }
 }
