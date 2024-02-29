@@ -83,16 +83,17 @@
 }
 
 .fa-reg-circle-wrapper {
-  margin-right: 5px;
-  padding: 8px;
+  /* margin-right: 5px; */
+  /* padding: 8px; */
 
   cursor: pointer;
 }
 
 .single-note-delete-icon-wrapper {
-  padding: 8px;
-  height: 60px;
-  line-height: 40px;
+  /* padding: 8px; */
+  /* height: 60px; */
+  /* line-height: 40px; */
+  /* border: 1px solid green; */
 }
 
 .single-note-delete-icon {
@@ -109,20 +110,29 @@
 }
 
 .single-note-content {
-  margin-top: 4px;
-  padding: 8px;
+  /* margin-top: 4px; */
+  /* padding: 8px; */
+  
 }
 
 .single-note-wrapper {
   display: flex;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
+  /* border-top: 2px solid white;
+  border-left: 2px solid white; */
   justify-content: space-between;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  padding: 10px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+
 }
 
 .single-note {
-  padding: 5px;
+  /* border: 1px solid red; */
   word-break: break-all;
-  display: flex;
+  /* display: flex;
+  align-items: center;
+  gap: 10px; */
+
 }

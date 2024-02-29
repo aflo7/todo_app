@@ -50,19 +50,18 @@ function Notes(props: NotesProps) {
               setFolderName('');
             }}
           >
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-
-            <strong>Folder name</strong>
-            <input
-              required
-              className="folder-name-input"
-              id="folder-name"
-              name="folder-name"
-              type={'text'}
-              value={folderName}
-              onChange={(e) => setFolderName(e.target.value)}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <strong>Folder name</strong>
+              <input
+                required
+                className="folder-name-input"
+                id="folder-name"
+                name="folder-name"
+                type={'text'}
+                value={folderName}
+                onChange={(e) => setFolderName(e.target.value)}
               ></input>
-              </div>
+            </div>
             <button type={'submit'} className="create-folder-btn">
               Create
             </button>
@@ -90,7 +89,7 @@ function Notes(props: NotesProps) {
                 setContent('');
               }}
             >
-              <div style={{display: 'flex', flexDirection: 'column'}}>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <strong>Text</strong>
 
                 <input
@@ -129,17 +128,20 @@ function Notes(props: NotesProps) {
             {selectedFolder !== 'New Folder' ? selectedFolder : null}
           </strong>
         </div>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
+
+       
         {selectedFolder !== 'New Folder' && currTasks
           ? currTasks.map((task: Task, i: number) => {
               return (
                 <div className="single-note-wrapper" key={i}>
                   <div className="single-note">
-                    <div className="fa-reg-circle-wrapper">
+                    {/* <div className="fa-reg-circle-wrapper">
                       <FaRegCircle
                         className="fa-reg-circle"
                         onClick={() => deleteTask(task.id)}
                       />
-                    </div>
+                    </div> */}
                     <div className="single-note-content">{task.content}</div>
                   </div>
                   <div className="single-note-delete-icon-wrapper">
@@ -152,6 +154,7 @@ function Notes(props: NotesProps) {
               );
             })
           : null}
+           </div>
       </div>
     </div>
   );
